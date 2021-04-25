@@ -1,1 +1,2 @@
 LoginService is initialized byMohamed Mukhtar
+LoginService is extended by MAx Mustermann
