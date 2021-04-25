@@ -1,3 +1,4 @@
 Hello, welcome to git
-First change
+First Functionality
 Second Functionality added by someone else on the remote repository
+Third functionality is added by me!!
