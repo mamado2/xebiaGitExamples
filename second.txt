@@ -1,1 +1,6 @@
 Hello, welcome in the Second Fie
+This is my first change to this file
+And Git is great and better than:
+CVS
+SVN
+All 
