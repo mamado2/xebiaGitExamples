@@ -1,0 +1,100 @@
+Shanmukh:
+
+First Week:
+Agile + Version Control:
+24-04-2021: Agile
+	Software Engineering in the past: 
+		Combining the domain Knowledge  and the technical knowledge
+		
+		- Low resources: Hardware dependent(ram / cpu time)
+		
+		Project managers: what matters was HW considerations/ limitations
+		SW which matches to the HW!! ECG disable logging
+		
+	Starting 2000
+		Applications should be SW-oriented and not HW-aoriented
+		
+		--> They have to plan for that!!
+		
+		New Concept: SDLC: SW Development Life cycle = How SW should be developed
+		SDLC = Vorgehensweise
+		the question: why you develop this Application
+			
+			
+	Requirements thruogh learning process:
+		- Class room based or not??
+		
+		Requiremts:
+			- functional: what the customer  wants?
+			- technical: from the developer perspective: 
+				- Logging/ Easee of development/ Testing/ 
+				- What type of technology stack you want to use
+				
+				
+	--> Analysis and Design:
+			It is about finding the right properties
+			Understanding the issue
+		Why?: To prevent Issues(Not meeting Expectations)
+			Learning + Deconstructing + Rebuilding Concepts(Ideas)
+			Analysis:
+				- Deconstructing the Requirements
+				- ERD/ UML
+			
+		--> How to find the requirement? Noom 3aleha lamin talga the requirements
+				Learning by doing
+		Requirements are the gold, because it is the thing which we have to map to something else
+		
+	
+	Types of SDLC:
+		models should ensure correctness(last mapped product is that what the customer wants)
+		with low cost(not after finishing one year you should rework and correct)
+		- Wasserfall/ Waterfall/ Shallal: 
+			you dont go back = You dont accept new requiremnets if the sytem is being built
+				Requirements are being freezed and SW is built
+			--> guarantees High Assurance(Accuracy)
+			One Rutsch of the water
+				Customer is not infromed until the app(Mapping of the requirement is done)
+				
+		- Iterative: continuous verifying the mappings of Requirements to products
+			--> Objective: Rapid Development (Fastness)
+			- Dealing with changes/ Flexibility
+			- Suppoting Upgradability/ Changeability
+			Making sure that addition of new parts and changing built parts is always possible
+				SW should be soft
+				
+		- Spiral Model:
+			risk based Process model
+			--> Kombine Objectives of waterfall and Spiral(Assurance + Rapid development)
+			= Waterfall + iterative
+				iteartion model where every iteration follows waterfall model
+			
+		- Agile Model:
+			iterative = Sprint
+			Projekt/ Product is divided in Sprints till it is finished:
+				- 
+			- incremental: growing up the Software from prototype to the expected last result
+				instead of doing effort to build the whole thing directly
+			why?
+				- improves product quality: fast feedback --> reduces risk
+					unit test / bdd
+				- 
+			working on small units, 
+			test rapidly, regularly small unita which can be composed to build the whole Application
+			interactive process: Customer is integrated in the process
+			Additive/ Composition
+			Process which supports/ encourages Composability
+			: Things(Requirements) are changing faster than waiting fir the whole process to finish
+				increamental and not holistic approach(one by one: One feature and then the other)
+				being flexible to changes
+			the process integrates the customer(Domain Expert)
+			having the customer beside you to give fast feedback
+			how to have the Assurance of the waterfall
+			
+			minimizing the Risk 
+			
+	Scrum Methodologies:
+		- Product backlog: controlled by customer/ Stakehholder
+		- Sprint backlog: controlled by developers
+		
+		Scrum Master: mediates between Product Owner and Developmnt Teams
+			One Product may be developedby different development Teams

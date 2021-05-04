@@ -1,5 +1,8 @@
 Version Management/ Control: = revision control = source control
 
+see config file for more infos about remotes
+	.git/config
+	
 git is to collaborate with others on one thing
 git remotes:
 	to collaborate you have to connect to remote repositories
