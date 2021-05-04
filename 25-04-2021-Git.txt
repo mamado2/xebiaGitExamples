@@ -1,0 +1,236 @@
+Version Management/ Control: = revision control = source control
+
+git is to collaborate with others on one thing
+git remotes:
+	to collaborate you have to connect to remote repositories
+	git remote is the command to handle remote repositories
+		to connect them(to add them to your local git configurations)
+		to name them
+		to remove thme from git local configuration
+	git remote name is a short alias name instead of the git repository URL
+	
+	git remote show repositor_name
+		shows more infos
+		
+- Collaboration = 
+	Building SW Products together by different developers
+	Every developer contributes to the product repository
+	every subproduct may have it is own branch
+	branch is the opy to work on to add some fnctionality(some system behaviour)
+	SW product besteht aus SW Entities(Function/ Class/ Module/ Package/ Service/ ...)[See SW Universe of RalfWestphal]
+		Master is the summation of many Development tasks(several file changes) added to the Version Control System(product repository)
+	
+	Branching: Creating a master copy from a specific point of time(speicifc commit hash)
+	Merging: Adding the branch again to the master
+	
+	MErging changes from dfifferent developers to a main branch(master)
+	
+	It is always about the workflow stupid!
+	
+	Git Workflow:
+		clone: create Working copy from a remote repository
+		branch: either locally or remote in the server itself
+		update Operation: local repository as peer asks to get changes from remote repository 
+		edit add move delete files (in the working copy?)
+		
+		
+	Terminologies:
+		master: default development branch(Product Branch)
+		origin: default upstream repository
+		HEAD: current branch
+		HEAD^: parent of head(currentbranch)
+		
+		
+Lessons learned:
+	- Study error messages:
+		$ git checkout Translation-branch
+error: Your local changes to the following files would be overwritten by checkout:
+        sample.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+
+	- Creating a new branch
+			it is branched from the local master branch
+			how to meerge from branch to master
+			
+	- Modularizing the versioning mgmt in small units(Localinzng the errors/ reducing ripple effects)
+		- ECG: one repository instead of onefor every service/ component
+	- Version Database: locally or centrally
+		- Push and pull from it
+	- on the working directory:
+		right mous clicke --> git bash here
+		
+- Question yourself: What and why?
+	what: Die Begriffe/ Domain names
+
+Tasks of Version Control Systems:
+	Branching
+	Backup
+	Analysis
+	
+Version Control = ضبط النسخ
+هناك عدة تسخ من الت\بيق
+
+backupp = Version
+
+-> The problem: you have a SW-Application(Product)
+	- Scenario: Changes to the SW(nach Bug fixing/ new Feature)
+		--> Changes may affect the SW
+		
+		- For loop(after every change)
+			- After every accepted change you SAVE A COPY of the application for a specific time
+		- End Loop
+
+	- Backup can be used to restore the last versions of the SW(Backups)
+	
+	- Version is just a backup of the Application at specific time
+	- Developing an application is a process of always adding new changes to the application. The master Version includes hte last version which should be provided to the customrer
+	
+- Changes are:
+		- Add Folder/ File
+		- Change file/ folder content
+		- Remove files/ folders
+
+	- Changes are changes to the mapping
+	
+- In the passt:
+	
+	
+- Local Version Control System:
+	-having folders on the local machine with Dates and timestamps
+	- It is simple but error prone
+	- It is difficult to find the version of a specific time in the past
+	
+	1. You check out from the needed version/ last version
+	2. You work on the working copy
+	3. You save the changes into new folder with date and time stamp
+	
+	Maybe you save the vresions for every Feature seperate from the other features
+	
+	
+	
+- Centralized Version System:
+	- Only one file is copied, not the whole version Database
+	- collaboration of many people
+		- how to tell something the last version of a file to work on further
+		
+- Distributed Version Control Systems:
+	- Peer to peer mode not client Server model
+	- If the server goes down the clients have all the system on their local machines(not only the files but their hisstory too)
+	fully mirror ofthe serveri is downlaoded locally
+	- Not only a snapshot of the last version of single files but the whole Version Database is copied to the local machine
+	- Check is done against the local Version Databse
+	
+- Git bash and git ui: is installed with git to access the git system
+- Git vs. Github:
+	- Github hosted on the web(cloud) , but git is installed on the local machine
+	- 
+	
+- github user:
+	mamado2: mx3kharrazi2009@gmail.com
+	mamado: mx3kharrazi@gmail.com
+
+Git Workflow:
+	- git init: create a repository in a folder. 
+		--> this is the working directory
+		اعتبر هذا الدليل كدليل git
+		creates a hidden folder to save the databse repository
+		
+		echo: repeat the text
+		
+		echo "Welcome to git" >> sample.txt // creates file with this text
+		
+		ls -l
+		
+		created on the local machine, not yet in the repository
+		
+	- Staging a file:
+		Making it tracked(managed) by git
+		Moving the file from the working directory(Where you develop) to the staging area(Staging area == index ??)
+		= move the file from local system to .git directory
+		
+		git add sample.txt  // add file contents to the index
+		
+		file is referenced by git: open index file: you will find it
+		
+	- Unstaging unneeded files:
+		git reset .idea/\*.* // it is removed from index and remains in working copy
+		
+	- Moving to local git repository:
+		- git commit -m "firs tcommit of sample file" sample.txt
+		
+		see: edit message
+		
+		only the last message is there
+		
+	- Identify yourself:
+		git config --global user.name mamado
+		git config --global user.email mx3kharrazi@hotmail.com
+		
+		--> this has to be done also on Intellij/ Windows machine
+		
+	- vi:
+		i : INSERT
+		Esc
+		:wq : Save and quit
+		
+	- Finding the changes: diff
+		git diff // only the last changed file
+		
+	- Pushing to remote Repository:
+		- create new repository on github (web interface)
+	- link the local master branch to the remote one
+	
+		git remote add origin https://github.com/mamado2/xebiaGitExamples.git
+
+	- commits on the github
+	
+	- Pulling versions of changes dow by someone else to the remote repository
+		git pull origin master
+		
+	- unstage:
+		git restore --unstage 
+		
+	- Creating a new branch
+			it is branched from the local master branch
+			how to meerge from branch to master
+			
+			and then you are working in the new branch
+			you commit in the new branch
+			
+			commit again to the local master
+		
+		git branch TranslationService
+		
+		git branch // list all branches
+		
+		git add files
+		git commit newFile
+		
+		git push -u origin TranslationBranch
+		
+		you may commit the branch
+		
+	-  Remove files from a branch
+		git rm *.txt0
+	
+	- List all commits:
+		git log
+		
+	- Shwo commits with differeces
+		git log -p
+	- Show last 2 commits
+		git log -2
+	- Show log of specific branch
+		git log master..branchname
+		git log origin/$BRANCH_NAME
+		
+	- Show history(commits) of a specific file
+		git log --follow -- TranslationService.txt
+		
+		this shows all commits hashes
+		
+Notice:
+	Codebase residing in the master branch is considered to be production-ready. When it is ready for a specific release, 
+	the latest commit will be given a release tag.
